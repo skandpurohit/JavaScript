@@ -1,0 +1,39 @@
+<!doctype html>
+	<html>
+		<head>
+			<script>
+			var ship_location1 = 2 ;
+			var ship_location2 = 3 ;
+			var ship_location3 = 1 ;
+			var isSink = false;
+			var hit = 0 ;
+			var tries = 0;
+			while(isSink == false){
+				var userInput = prompt("Ready , Aim and Fire, Enter Value Between 1-7 : ");
+					
+				if(userInput < 0 || userInput > 7) {
+					alert("Please Enter A Valid Number");
+				}else {
+					tries = tries + 1 ;
+				if(userInput == ship_location1 || userInput == ship_location2 || userInput == ship_location3 )	{
+					hit = hit +1 ;
+				}
+				
+				if(hit == 3){
+					isSink= true ;
+					alert("BattleShip Sank ,  You Won ! ")
+					
+					var stats = "Took " + tries + " guesses to sink the battleship. " + "Shooting Accuracy is : " + (300/tries) ;
+					alert(stats);				}
+				else
+					isSink =false ;
+	
+				}
+			}
+			</script>
+			<title>The BattleShip</title>
+		</head>
+		<body>
+		
+		</body>
+	</html>
