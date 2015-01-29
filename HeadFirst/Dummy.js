@@ -12,7 +12,7 @@
     </head>     
     <body>              
         <div>Some Dummy Content !!</div>
-        <p id="code1">MAD is </p>
+        <p id="code1">MADis </p>
         <p id="code2">DEVOPS </p>
         <p id="code3">MAA has </p>
         <p id="code4">DA team </p>
